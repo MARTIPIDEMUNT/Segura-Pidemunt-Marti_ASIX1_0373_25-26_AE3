@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
+    <!-- Configuració bàsica del document -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Títol de la pestanya del navegador -->
     <title>Newsletter de Rosalía</title>
-    <link rel="icon" href="imatges/logo.ico" type="image/x-icon">
+
+    <!-- Icona de la pàgina -->
+    <link rel="icon" href="/imatges/logo.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Capçalera amb el títol i la navegació principal -->
     <header>
         <h1>Subscripció a la newsletter</h1>
         <nav>
             <ul>
-                <li><a href="./index.html">Inici</a></li>
-                <li><a href="./discografia.html">Discografia</a></li>
-                <li><a href="./newsletter.html">Newsletter</a></li>
+                <li><a href="/index.html">Inici</a></li>
+                <li><a href="/discografia.html">Discografia</a></li>
+                <li><a href="/newsletter.html">Newsletter</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Contingut principal de la pàgina -->
     <main>
         <section>
             <h2>Inscriu-t’hi per rebre les últimes novetats de Rosalía</h2>
 
+            <!-- Formulari de subscripció -->
             <form action="#" method="post">
+                <!-- Camps de text bàsics -->
                 <label for="nom">Nom:</label>
                 <input id="nom" name="nom" type="text" required>
 
                 <label for="cognoms">Cognoms:</label>
                 <input id="cognoms" name="cognoms" type="text" required>
 
+                <!-- Camp numèric amb límit d’edat -->
                 <label for="edat">Edat:</label>
                 <input id="edat" name="edat" type="number" min="0" max="120" required>
 
+                <!-- Llista desplegable per seleccionar el país -->
                 <label for="pais">País:</label>
                 <select id="pais" name="pais" required>
                     <option value="">-- Selecciona --</option>
@@ -41,9 +52,11 @@
                     <option value="other">Altres</option>
                 </select>
 
+                <!-- Camp de correu electrònic -->
                 <label for="email">Correu electrònic:</label>
                 <input id="email" name="email" type="email" required>
 
+                <!-- Caselles de selecció per interessos -->
                 <fieldset>
                     <legend>Interessos</legend>
                     <label><input type="checkbox" name="interessos" value="concerts"> Concerts</label>
@@ -51,18 +64,22 @@
                     <label><input type="checkbox" name="interessos" value="merch"> Merchandising</label>
                 </fieldset>
 
+                <!-- Botons d’opció per al format preferit -->
                 <p>Format preferit:</p>
                 <label><input name="format" type="radio" value="mp3" checked> MP3</label>
                 <label><input name="format" type="radio" value="lossless"> Lossless</label>
 
+                <!-- Àrea de text per a comentaris addicionals -->
                 <label for="comentaris">Comentaris:</label>
                 <textarea id="comentaris" name="comentaris" rows="4"></textarea>
 
+                <!-- Botó per enviar el formulari -->
                 <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
 
+    <!-- Peu de pàgina -->
     <footer>
         <p>© 2025 Rosalía.</p>
     </footer>

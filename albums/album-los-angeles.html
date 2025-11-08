@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
+    <!-- Configuració bàsica del document -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Títol que apareixerà a la pestanya del navegador -->
     <title>Los Ángeles - Rosalía</title>
+
+    <!-- Icona de la pàgina (favicon) -->
     <link rel="icon" href="../imatges/logo.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Capçalera principal de la pàgina -->
     <header>
+        <!-- Títol destacat amb el nom de l'àlbum i l'any -->
         <h1>Los Ángeles (2017)</h1>
+
+        <!-- Menú de navegació amb enllaços a altres seccions de la web -->
         <nav>
             <ul>
                 <li><a href="../index.html">Inici</a></li>
@@ -18,21 +27,35 @@
         </nav>
     </header>
 
+    <!-- Cos principal del contingut -->
     <main>
         <article>
-            <figure>
-                <img src="../imatges/portada_los-angeles.jpg" alt="Portada Los Ángeles">
-                <figcaption>Los Ángeles</figcaption>
-            </figure>
-
+            <!-- Imatge de la portada del disc -->
+            <img src="../imatges/portada_los-angeles.jpg" alt="Portada Los Ángeles">
+            
+            <!-- Títol secundari amb el nom de l’àlbum -->
+            <h3>Los Ángeles</h3>
+          
+            <!-- Secció amb la llista de cançons -->
             <h2>Llistat de cançons</h2>
             <ol>
-                <li>Catalina <audio controls><source src="audio/catalina.mp3" type="audio/mpeg"></audio></li>
-                <li>Nos quedamos solitos <audio controls><source src="audio/solitos.mp3" type="audio/mpeg"></audio></li>
-                <li>De plata <audio controls><source src="assets/audio/deplata.mp3" type="audio/mpeg"></audio></li>
+                <!-- Cada element de la llista inclou una cançó i el seu reproductor Spotify -->
+                <li>
+                    Catalina 
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/0c7XKJjw6heRqQX7PzkUIj?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li>
+                    Nos quedamos solitos 
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1QzfazYi9a86Bf0h71xbH1?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li>
+                    De plata 
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6ZpYO78uVWjZ6AoxSxnAri?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
             </ol>
 
-            <table>
+            <!-- Taula amb informació tècnica sobre l’àlbum -->
+            <table border="2">
                 <thead>
                     <tr>
                         <th>Durada</th>
@@ -42,6 +65,7 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <!-- Cada cel·la conté una dada del disc -->
                         <td>43:25</td>
                         <td>Raül Refree</td>
                         <td>Universal Music</td>
@@ -51,6 +75,7 @@
         </article>
     </main>
 
+    <!-- Peu de pàgina amb els drets d’autor -->
     <footer>
         <p>© 2025 Rosalía.</p>
     </footer>

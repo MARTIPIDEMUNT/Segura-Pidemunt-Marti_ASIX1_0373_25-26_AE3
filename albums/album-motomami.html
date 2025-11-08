@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
+    <!-- Configuració bàsica del document -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Títol que apareix a la pestanya del navegador -->
     <title>Motomami - Rosalía</title>
+
+    <!-- Icona o favicon de la pàgina -->
     <link rel="icon" href="imatges/logo.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Capçalera de la pàgina amb el títol i el menú -->
     <header>
+        <!-- Títol principal amb el nom i l'any de l’àlbum -->
         <h1>Motomami (2022)</h1>
+
+        <!-- Menú de navegació amb enllaços a altres seccions -->
         <nav>
             <ul>
                 <li><a href="../index.html">Inici</a></li>
@@ -18,21 +27,35 @@
         </nav>
     </header>
 
+    <!-- Contingut principal de la pàgina -->
     <main>
         <article>
-            <figure>
-                <img src="../imatges/portada_motomami.jpg" alt="Portada Motomami">
-                <figcaption>Motomami</figcaption>
-            </figure>
+            <!-- Imatge de la portada de l’àlbum -->
+            <img src="../imatges/portada_motomami.jpg" alt="Portada Motomami">
+            
+            <!-- Subtítol amb el nom de l’àlbum -->
+            <h3>Motomami</h3>
 
+            <!-- Secció amb la llista de cançons -->
             <h2>Llistat de cançons</h2>
             <ol>
-                <li>Saoko <audio controls><source src="assets/audio/saoko.mp3" type="audio/mpeg"></audio></li>
-                <li>Chicken Teriyaki <audio controls><source src="assets/audio/chickenteriyaki.mp3" type="audio/mpeg"></audio></li>
-                <li>Despechá <audio controls><source src="assets/audio/despecha.mp3" type="audio/mpeg"></audio></li>
+                <!-- Cada element mostra una cançó amb un reproductor de Spotify integrat -->
+                <li>
+                    Saoko 
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2FYGZDfsAnNsrm1gVbyKnG?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li>
+                    Chicken Teriyaki 
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6hH6QJ9ZAO0Z6m7PfvLoXW?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
+                <li>
+                    Bulerías 
+                    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/5tmrMIajDQRBcJQPaoAGdk?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </li>
             </ol>
 
-            <table>
+            <!-- Taula amb dades tècniques de l’àlbum -->
+            <table border="2">
                 <thead>
                     <tr>
                         <th>Durada</th>
@@ -42,6 +65,7 @@
                 </thead>
                 <tbody>
                     <tr>
+                        <!-- Informació sobre el disc -->
                         <td>42:20</td>
                         <td>Rosalía / El Guincho</td>
                         <td>Columbia Records</td>
@@ -51,6 +75,7 @@
         </article>
     </main>
 
+    <!-- Peu de pàgina amb els drets d’autor -->
     <footer>
         <p>© 2025 Rosalía.</p>
     </footer>

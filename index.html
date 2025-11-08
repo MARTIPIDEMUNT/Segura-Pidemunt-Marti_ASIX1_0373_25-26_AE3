@@ -1,51 +1,67 @@
 <!DOCTYPE html>
 <html lang="ca">
 <head>
+    <!-- Configuració bàsica del document -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Títol que apareixerà a la pestanya del navegador -->
     <title>MySpoti - Rosalía</title>
-    <link rel="icon" href="imatges/logo.ico" type="image/x-icon">
+
+    <!-- Icona (favicon) que es mostra a la pestanya del navegador -->
+    <link rel="icon" href="/imatges/logo.ico" type="image/x-icon">
 </head>
 <body>
+    <!-- Capçalera principal amb el títol i la navegació -->
     <header>
+        <!-- Títol principal de la pàgina -->
         <h1>Rosalía</h1>
+
+        <!-- Menú de navegació amb enllaços a altres pàgines -->
         <nav>
             <ul>
-                <li><a href="./index.html">Inici</a></li>
-                <li><a href="./discografia.html">Discografia</a></li>
-                <li><a href="./newsletter.html">Newsletter</a></li>
+                <li><a href="/index.html">Inici</a></li>
+                <li><a href="/discografia.html">Discografia</a></li>
+                <li><a href="/newsletter.html">Newsletter</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Contingut principal del lloc -->
     <main>
+        <!-- Secció de benvinguda amb una breu descripció de l’artista -->
         <section>
             <h2>Benvingut/da al lloc oficial de Rosalía</h2>
             <p>Rosalía Vila Tobella és una cantant, compositora i productora catalana coneguda per combinar flamenc tradicional amb estils contemporanis com el pop, el trap i la música electrònica. Amb una carrera internacionalment reconeguda, ha revolucionat la música urbana i ha guanyat múltiples premis Grammy i Latin Grammy.</p>
         </section>
 
+        <!-- Secció amb notícies actuals sobre Rosalía -->
         <section>
             <h2>Notícies recents</h2>
+
+            <!-- Primera notícia -->
             <article>
                 <h3>Nou projecte a l’horitzó</h3>
-                <p>Després de l’èxit de <em>Motomami</em>, Rosalía ha confirmat que treballa en nova música per al 2025.</p>
+                <p>Després de l’èxit de <strong>Motomami</strong>, Rosalía ha confirmat que treballa en nova música per al 2025.</p>
             </article>
+
+            <!-- Segona notícia -->
             <article>
                 <h3>Rosalía en directe</h3>
                 <p>Propera gira mundial prevista per a l’any vinent. Consulta les dates al seu web oficial.</p>
             </article>
         </section>
 
+        <!-- Secció amb un reproductor de Spotify -->
         <section>
             <h2>Reprodueix una mostra</h2>
-            <p>Escolta un fragment de “Despechá”.</p>
-            <audio controls>
-                <source src="./audio/despecha.mp3" type="audio/mpeg">
-                El teu navegador no suporta l'element d'àudio.
-            </audio>
+            <p>Escolta un fragment de “Saoko”.</p>
+            <!-- Reproductor incrustat de Spotify -->
+            <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2FYGZDfsAnNsrm1gVbyKnG?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </section>
     </main>
 
+    <!-- Peu de pàgina amb informació legal -->
     <footer>
         <p>© 2025 Rosalía. Tots els drets reservats.</p>
     </footer>
